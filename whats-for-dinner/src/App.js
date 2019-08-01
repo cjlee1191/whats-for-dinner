@@ -34,7 +34,7 @@ class App extends React.Component {
       const KEY = process.env.REACT_APP_TOKEN;
       const ID = process.env.REACT_ID_TOKEN;
 
-      const apiUrl = `https://api.edamam.com/search?q=${this.state.homePage}&app_id=${ID}&app_key=${KEY}`;
+      const apiUrl = `https://api.edamam.com/search?q=${this.state.homePage}&app_id=${ID}&app_key=${KEY}&from=0&to=12`;
       const apiResponse = await Axios.get(apiUrl);
       const searchResult = apiResponse.data
       if (apiResponse.status === 200) {
@@ -49,11 +49,11 @@ class App extends React.Component {
 
   }
   AddInput = async () => {
-
+    window.scrollTo(0, 300)
     try {
       const KEY = process.env.REACT_APP_TOKEN;
       const ID = process.env.REACT_ID_TOKEN;
-      const apiUrl = `https://api.edamam.com/search?q=${this.state.input}&app_id=${ID}&app_key=${KEY}`;
+      const apiUrl = `https://api.edamam.com/search?q=${this.state.input}&app_id=${ID}&app_key=${KEY}&from=0&to=12`;
       const apiResponse = await Axios.get(apiUrl);
       const newSearchResult = apiResponse.data
       if (apiResponse.status === 200) {

@@ -12,7 +12,6 @@ class FoodList extends React.Component {
     }
 
     handleClick = (event) => {
-
         event.preventDefault();
         this.props.handleClick(event)
 
