@@ -1,0 +1,84 @@
+.filter {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    text-decoration: none;
+    margin-bottom: 130px;
+    margin-top: 20px;
+}
+
+.drop-down {
+    display: flex;
+    flex:1;
+    justify-self: center;
+    align-self: center;
+    min-width: 225px;
+    min-height:40px;
+    max-width: 225px;
+    max-height:40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 28px;
+    border-radius: 10px;
+    font-style: 'courier';
+  }
+.filter-button {
+    flex:1;
+    justify-self: center;
+    align-self: center;
+    height:50px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-left: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+.search{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 130px;
+    
+   
+}
+.search-bar-button{
+    display: flex;
+    flex:1;
+    justify-self: center;
+    align-self: center;
+    height:50px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-left: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-style: 'courier';
+ }
+ .search-bar-text {
+    flex:1;
+    justify-self: center;
+    align-self: center;
+    min-width: 225x;
+    min-height:40px;
+    max-width: 225px;
+    max-height:40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 28px;
+    border-radius: 10px;
+}
+.search-bar-text:hover {
+    background-color: grey;
+  }
+  .search-bar-button:hover {
+    background-color: grey;
+  }
+  .filter-button:hover {
+    background-color: grey;
+  }
+  .drop-down:hover {
+    background-color: grey;
+  }
+
