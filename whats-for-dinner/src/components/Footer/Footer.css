@@ -4,8 +4,9 @@
     align-self: flex-end;
     justify-self: flex-end;
     width: 100%;
-    height: 40px;
-    background-image: linear-gradient(to right top, #065a03, #0d5303, #114c04, #144604, #153f04, #143c03, #133a03, #123702, #0f3702, #0c3701, #083701, #043701);
-    
+    height: 100px;
+    background-image: url('http://www.pngonly.com/wp-content/uploads/2017/06/Healthy-Food-PNG-Footer.png');
+    background-size: contain;
+    background-position: fixed;
     
 }
