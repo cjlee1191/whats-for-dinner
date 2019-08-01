@@ -15,7 +15,6 @@
   justify-items: center;
   align-items: center;
   border:lightgray 1px solid;
-  /* border-radius: 10px; */
   background-color: #F1EEDB;
   max-width: 400px;
   max-height: 520px;
@@ -82,6 +81,6 @@
 
   .bookmark {
     color: rgb(156, 135, 16);
-    font-size: 16px;
+    font-size: 24px;
     font-weight: bold;
   }

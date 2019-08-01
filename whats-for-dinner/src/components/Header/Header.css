@@ -46,6 +46,9 @@ ul{
     margin-right: 10px;
     margin-bottom: 10px;
 }
+.logo:hover {
+   opacity: .4;
+}
 
 .app-title {
     flex: 1;
@@ -56,19 +59,3 @@ ul{
   
 }
 
-/* @media screen and (min-width: 600px) {
-    .header-container{
-      display: flex;
-      justify-content: flex-start;
-      justify-self: flex-start;
-      flex-direction: row;
-    }
-
-.app-title {
-    flex:1;
-    justify-self: center;
-    align-self: center;
-    font-size: 30px;
-  
-}
-} */
