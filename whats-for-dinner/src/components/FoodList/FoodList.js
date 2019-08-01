@@ -22,7 +22,7 @@ class FoodList extends React.Component {
     render(){
         const recipes = this.props.recipes.map((item, index) =>   
             
-            <div className="recipes" >
+            <div className="recipes" key={index}>
              <h1 className="title">{item.recipe.label}</h1>
              <img src={item.recipe.image} alt="recipes" className="img"/>
              <h3 className="title">Source - {item.recipe.source}</h3>

@@ -6,7 +6,8 @@ import Search from './components/Search/Search'
 import Filter from './components/Search/Filter'
 import FoodList from './components/FoodList/FoodList'
 import Header from './components/Header/Header'
-import Bookmarks from './components/Bookmarks/Bookmarks';
+import Bookmarks from './components/Bookmarks/Bookmarks'
+import Footer from './components/Footer/Footer'
 
 
 
@@ -36,11 +37,10 @@ class App extends React.Component {
         const apiUrl = `https://api.edamam.com/search?q=${this.state.homePage}&app_id=${ID}&app_key=${KEY}`;
         const apiResponse = await Axios.get(apiUrl);
         const searchResult = apiResponse.data
-        console.log(searchResult.hits)
         if(apiResponse.status === 200) {
           this.setState(prevState => ({
             recipes: searchResult.hits
-          }), () => {console.log(searchResult)}
+          })
           )}
       } catch (error) {
         console.log(error)
@@ -56,7 +56,7 @@ class App extends React.Component {
         if(apiResponse.status === 200) {
           this.setState(prevState => ({
           recipes: newSearchResult.hits
-          }), () => {console.log(this.searchResult)}
+          })
           )}
       } catch (error) {
         console.log(error)
@@ -72,13 +72,12 @@ class App extends React.Component {
     }
     HandleClick = (event) => {
      let label = parseInt(event.currentTarget.value)
-      this.setState({
+      this.setState(prevState => ({
+       bookmarks: [this.state.recipes[label]]
+      })
       
-         bookmarks: [this.state.recipes[label]]
-      }, console.log(label))
     
-    
-    }
+      )}
    render(){
    return(
     
@@ -94,6 +93,7 @@ class App extends React.Component {
           <Link to="/"></Link>
           <Link className="cookbook" to="/cookbook">Cook Book</Link>
           <Route path="/cookbook" render={() => (<Bookmarks bookmarks={this.state.bookmarks} handleClick={this.HandleClick} updateSearch={this.AddInput} />)} />
+          <Footer />
         </div>
    )
  }

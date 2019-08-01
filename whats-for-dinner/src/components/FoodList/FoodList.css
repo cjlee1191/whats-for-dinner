@@ -2,7 +2,7 @@
 .recipe-list{
   display: flex;
   align-self: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
   
@@ -15,22 +15,17 @@ align-self: center;
 justify-items: center;
 align-items: center;
 border:lightgray 1px solid;
-
 background-color: #F1EEDB;
-max-width: 400px;
-max-height: 520px;
-min-width: 400px;
-min-height: 530px;
-margin-top: 5px;
-margin-bottom: 5px;
-margin-left: 2px;
-margin-right: 2px;
+max-width: 350px;
+max-height: 450px;
+min-width: 350px;
+min-height: 450px;
 box-shadow: 0 0 5px lightgrey;
 padding-bottom: 10px;
 }
 
 .recipes:hover {
-  background-color: lightgrey;
+  background-color: lightgray;
 }
 
 .title {

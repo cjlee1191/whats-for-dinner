@@ -16,10 +16,10 @@
   align-items: center;
   border:lightgray 1px solid;
   background-color: #F1EEDB;
-  max-width: 400px;
-  max-height: 520px;
-  min-width: 400px;
-  min-height: 530px;
+  max-width: 350px;
+  max-height: 450px;
+  min-width: 350px;
+  min-height: 450px;
   margin-top: 5px;
   margin-bottom: 5px;
   box-shadow: 0 0 5px lightgrey;
