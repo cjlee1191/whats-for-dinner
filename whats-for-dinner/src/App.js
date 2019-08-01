@@ -71,10 +71,11 @@ class App extends React.Component {
       })
     }
     HandleClick = (event) => {
-    
+     let label = parseInt(event.currentTarget.value)
       this.setState({
-         bookmarks: this.state.recipes
-      }, console.log(event.currentTarget.name))
+      
+         bookmarks: [this.state.recipes[label]]
+      }, console.log(label))
     
     
     }

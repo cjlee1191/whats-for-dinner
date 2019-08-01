@@ -22,12 +22,12 @@ class FoodList extends React.Component {
     render(){
         const recipes = this.props.recipes.map((item, index) =>   
             
-            <div className="recipes" key={index}>
+            <div className="recipes" >
              <h1 className="title">{item.recipe.label}</h1>
              <img src={item.recipe.image} alt="recipes" className="img"/>
              <h3 className="title">Source - {item.recipe.source}</h3>
              <a className="recipe-link"href={item.recipe.shareAs}>Click For Recipe</a>
-             <button label={item.recipe.label} source={item.recipe.source} className="button" onClick = {this.handleClick} onSubmit={this.AddInput}>Add to Cook Book</button>
+             <button value={index} source={item.recipe.source} className="button" onClick = {this.handleClick} onSubmit={this.AddInput}>Add to Cook Book</button>
         </div>
     )
     
