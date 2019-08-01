@@ -28,14 +28,14 @@ class Filter extends React.Component {
            <form className="filter" onSubmit={this.handleSubmit}> 
                  <select  className="drop-down" onChange={this.handleChange} placeholder="filter" >
                  <option value=""></option>
-                  <option value="vegan">Vegan</option>
-                  <option value="gluten-free">Gluten Free</option>
-                  <option value="keto">Keto</option>
-                  <option value="vegetarian">Vegetarian</option>
-                  <option value="paleo">Paleo</option>
-                  <option value="low-sodium">Low Sodium</option>
-                  <option value="low-calorie">Low Calorie</option>
-                  <option value="low-fat">Low Fat</option>
+                  <option className="drop-down-option"value="vegan">Vegan</option>
+                  <option className="drop-down-option" value="gluten-free">Gluten Free</option>
+                  <option className="drop-down-option" value="keto">Keto</option>
+                  <option className="drop-down-option" value="vegetarian">Vegetarian</option>
+                  <option className="drop-down-option" value="paleo">Paleo</option>
+                  <option className="drop-down-option" value="low-sodium">Low Sodium</option>
+                  <option className="drop-down-option" value="low-calorie">Low Calorie</option>
+                  <option className="drop-down-option" value="low-fat">Low Fat</option>
                   
                </select>
                <input className="filter-button"  value='Filter' type="submit"></input>

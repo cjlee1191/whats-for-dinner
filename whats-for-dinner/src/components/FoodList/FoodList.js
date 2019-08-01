@@ -27,7 +27,7 @@ class FoodList extends React.Component {
              <img src={item.recipe.image} alt="recipes" className="img"/>
              <h3 className="title">Source - {item.recipe.source}</h3>
              <a className="recipe-link"href={item.recipe.shareAs}>Click For Recipe</a>
-             <button name={item.recipe.label} className="button" onClick = {this.handleClick} >Add to Cook Book</button>
+             <button label={item.recipe.label} source={item.recipe.source} className="button" onClick = {this.handleClick} onSubmit={this.AddInput}>Add to Cook Book</button>
         </div>
     )
     

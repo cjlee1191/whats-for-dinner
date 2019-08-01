@@ -73,7 +73,7 @@ class App extends React.Component {
     HandleClick = (event) => {
     
       this.setState({
-      //  bookmarks: event.currentTarget
+         bookmarks: this.state.recipes
       }, console.log(event.currentTarget.name))
     
     
@@ -89,7 +89,7 @@ class App extends React.Component {
           <Search updateSearch={this.AddInput} handleChange={this.HandleChange} />
           <Filter updateSearch={this.AddInput} handleChange={this.HandleChange}/>
           </div>
-          <Route path="/"render={() => (<FoodList handleClick={this.HandleClick} recipes={this.state.recipes} recipe={this.props.recipes} />)} />
+          <Route exact path="/"render={() => (<FoodList handleClick={this.HandleClick} recipes={this.state.recipes} recipe={this.props.recipes} />)} />
           <Link to="/"></Link>
           <Link className="cookbook" to="/cookbook">Cook Book</Link>
           <Route path="/cookbook" render={() => (<Bookmarks bookmarks={this.state.bookmarks} handleClick={this.HandleClick} updateSearch={this.AddInput} />)} />
@@ -99,3 +99,5 @@ class App extends React.Component {
 }
 
 export default App;
+
+

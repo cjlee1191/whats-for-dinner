@@ -6,7 +6,6 @@ class Bookmarks extends React.Component{
     super(props);
     this.props = props;
     }
-
     
     render(){
         const bookmarks = this.props.bookmarks.map((item, index) =>   
@@ -25,7 +24,6 @@ class Bookmarks extends React.Component{
             <div className="recipe-list">{bookmarks}</div>
             
         )
-        
     }
 }
 export default Bookmarks
